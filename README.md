@@ -1,6 +1,6 @@
-## Google Homepage Assignmen
+# Google Homepage Assignment
 
-Quick mockup of the Odin Project's [Google Homepage assignment](https://www.theodinproject.com/courses/foundations/lessons/html-css).
+The Odin Project's [Google Homepage assignment](https://www.theodinproject.com/courses/foundations/lessons/html-css).
 
 ### Known Issues
 
