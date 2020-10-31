@@ -3,20 +3,24 @@ body {
   font-size: 13px;
 }
 
-header ul {
+header, footer {
+  display: flex;
+  justify-content: space-between;
+}
+header ul, footer ul {
   list-style: none;
   padding: 1.4em 1.8em;
   margin: 0;
 }
-header li {
+header li, footer li {
   float: left;
-  padding: 0.2rem 1em 0.2em 0;
 }
-header a {
+header a, footer a {
   text-decoration: none;
   color: #222222;
+  padding: 0.2rem 1em 0.2em 0;
 }
-header a:hover {
+header a:hover, footer a:hover {
   text-decoration: underline;
 }
 
@@ -50,16 +54,6 @@ footer li {
   padding: 0.2rem 2em 0.2em 0;
 }
 
-.left {
-  float: left;
-  display: block;
-}
-
-.right {
-  float: right;
-  display: block;
-}
-
 .user {
   padding: 0.5em 0.7em;
   color: #fff;
@@ -67,6 +61,9 @@ footer li {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
   border-radius: 100px;
+}
+.user:hover {
+  text-decoration: none;
 }
 
 section {

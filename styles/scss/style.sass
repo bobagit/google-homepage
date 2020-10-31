@@ -5,22 +5,21 @@ body
   font-family: Arial
   font-size: 13px
 
-header 
+header, footer 
+  display: flex
+  justify-content: space-between
   ul
     list-style: none
     padding: 1.4em 1.8em
     margin: 0
-
   li 
     float: left
-    padding: .2rem 1em .2em 0
-  
   a 
     text-decoration: none
     color: $base-color
+    padding: .2rem 1em .2em 0
     &:hover
       text-decoration: underline
-
 footer
   padding: .3em 1.8em
   color: $base-color
@@ -48,14 +47,6 @@ footer
     float: left
     padding: .2rem 2em .2em 0
 
-.left 
-  float: left
-  display: block
-
-.right 
-  float: right
-  display: block
-
 .user 
   padding: .5em .7em
   color: #fff
@@ -63,6 +54,8 @@ footer
   -moz-border-radius: 100px
   -webkit-border-radius: 100px
   border-radius: 100px
+  &:hover 
+    text-decoration: none
 
 section 
   clear: both
