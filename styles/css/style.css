@@ -1,35 +1,43 @@
-body {
-  font-family: Arial;
-  font-size: 13px;
+html {
+  height: 100%;
+  margin: 0;
 }
 
-header, footer {
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  font-size: 13px;
+  margin: 0;
+}
+
+header {
   display: flex;
   justify-content: space-between;
 }
-header ul, footer ul {
+header ul {
   list-style: none;
   padding: 1.2em 1.3em;
   margin: 0;
 }
-header li, footer li {
+header li {
   float: left;
+  padding: 0.2rem 1rem 0.2rem 0;
 }
-header li img, footer li img {
+header li img {
   width: 17px;
   height: 17px;
   opacity: 0.5;
-  padding-right: 0.5rem;
 }
-header li img:hover, footer li img:hover {
+header li img:hover {
   opacity: 1;
 }
-header a, footer a {
+header a {
   text-decoration: none;
-  color: #212121;
-  padding: 0.2rem 1em 0.2em 0;
+  color: #707070;
 }
-header a:hover, footer a:hover {
+header a:hover {
   text-decoration: underline;
 }
 
@@ -47,33 +55,34 @@ header a:hover, footer a:hover {
 }
 
 footer {
-  padding: 0.3em 1.8em;
-  color: #212121;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e3e3e3;
+  height: auto;
+  margin-top: auto;
+  color: #707070;
+  width: auto;
   background-color: #f2f2f2;
 }
-footer a {
-  text-decoration: none;
-  color: #212121;
-}
-footer a:hover {
-  text-decoration: underline;
-}
 footer ul {
+  width: auto;
+  margin-top: auto;
   list-style: none;
-  padding: 0.5em;
+  padding: 0.6em;
   margin: 0;
 }
-footer ul .right {
-  padding-right: 2.5em;
-}
 footer li {
-  display: inline;
+  padding: 0.2rem 0.1rem;
   float: left;
-  padding: 0.2rem 2em 0.2em 0;
+  font-size: 110%;
+}
+footer li a {
+  text-decoration: none;
+  padding: 1em;
+  color: #707070;
+}
+footer li a:hover {
+  text-decoration: underline;
 }
 
 section {
@@ -139,6 +148,25 @@ button:hover {
 
 input:focus, select:focus, textarea:focus, button:focus {
   outline: none;
+}
+
+@media (max-width: 800px) {
+  footer {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  footer ul {
+    width: auto;
+    display: flex;
+    margin: auto;
+  }
+  footer ul li {
+    justify-content: center;
+  }
+
+  #search {
+    width: 70%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
