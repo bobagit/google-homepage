@@ -28,6 +28,18 @@ header, footer
     padding: .2rem 1em .2em 0
     &:hover
       text-decoration: underline
+
+.user 
+  padding: .7em .9em
+  color: #fff
+  font-weight: 700
+  background-color: $user-bg-color
+  -moz-border-radius: 100px
+  -webkit-border-radius: 100px
+  border-radius: 100px
+  &:hover 
+    text-decoration: none
+
 footer
   padding: .3em 1.8em
   color: $base-color
@@ -36,7 +48,6 @@ footer
   bottom: 0
   width: 100%
   background-color: $nav-bg
-
   a
     text-decoration: none
     color: $base-color   
@@ -52,24 +63,17 @@ footer
     display: inline
     float: left
     padding: .2rem 2em .2em 0
-.user 
-  padding: .7em .9em
-  color: #fff
-  font-weight: 700
-  background-color: $user-bg-color
-  -moz-border-radius: 100px
-  -webkit-border-radius: 100px
-  border-radius: 100px
-  &:hover 
-    text-decoration: none
+
 section 
   clear: both
   padding: 10em 0
+
 #logo 
   display: block
   clear: both
   width: 272px
   margin: 0 auto 2em
+
 #search
   display: flex
   width: 100%
@@ -110,5 +114,6 @@ button
   &:hover
     border: 1px solid hsl(0, 0, 80%)
     box-shadow: 0 0 6px rgba(11,11,11,.1)
+
 input:focus, select:focus, textarea:focus, button:focus
   outline: none

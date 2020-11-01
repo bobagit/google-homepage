@@ -33,6 +33,19 @@ header a:hover, footer a:hover {
   text-decoration: underline;
 }
 
+.user {
+  padding: 0.7em 0.9em;
+  color: #fff;
+  font-weight: 700;
+  background-color: #4194a4;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+.user:hover {
+  text-decoration: none;
+}
+
 footer {
   padding: 0.3em 1.8em;
   color: #212121;
@@ -61,19 +74,6 @@ footer li {
   display: inline;
   float: left;
   padding: 0.2rem 2em 0.2em 0;
-}
-
-.user {
-  padding: 0.7em 0.9em;
-  color: #fff;
-  font-weight: 700;
-  background-color: #4194a4;
-  -moz-border-radius: 100px;
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
-}
-.user:hover {
-  text-decoration: none;
 }
 
 section {
