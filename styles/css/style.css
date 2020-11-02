@@ -91,6 +91,20 @@ section {
   clear: both;
   padding: 10em 0;
 }
+section p.next {
+  display: flex;
+  justify-content: center;
+}
+section p.next a {
+  padding: 1em;
+  background-color: lightyellow;
+  text-align: center;
+  font-size: 1.1em;
+  border: 1px dotted #e3e3e3;
+}
+section p.next a:hover {
+  background-color: #e3e3e3;
+}
 
 #logo {
   display: block;
