@@ -124,6 +124,7 @@ section {
   height: 2rem;
   margin: 0 1em;
   border: none;
+  font-size: 120%;
 }
 #search .mic img {
   height: 20px;
@@ -209,26 +210,55 @@ header.results #results-top #search input {
 header.results #results-top #search .mic img {
   height: 18px;
 }
-header.results #results-top #search ul .apps-user {
+header.results #results-top .apps-user {
   justify-content: flex-end;
+  margin-left: auto;
+  padding: 0;
 }
 header.results #results-bottom {
   flex-direction: row;
   margin-left: 10rem;
+  width: 55rem;
 }
 header.results #results-bottom li {
+  margin: 0 0 0 1rem;
+  padding: 0.2rem 0 0 0;
   height: 24px;
 }
 header.results #results-bottom li a {
-  padding: 0.4rem 0.7rem 0.4rem 1.2rem;
+  padding: 0.4rem 0.9rem 0.4rem 1.4rem;
+  text-decoration: none;
 }
 header.results #results-bottom li.active {
   color: #3473df !important;
   border-bottom: 3px solid #3473df;
 }
 header.results #results-bottom li.all {
-  background: url("../../img/results-nav-all-active.png") no-repeat 0 0;
+  background: url("../../img/results-nav-all-active.png") no-repeat 0 1px;
   background-size: 14px;
+}
+header.results #results-bottom li.news {
+  background: url("../../img/results-nav-news.png") no-repeat 0 3px;
+  background-size: 14px;
+}
+header.results #results-bottom li.maps {
+  background: url("../../img/results-nav-map.png") no-repeat 5px 1px;
+  background-size: 11px;
+}
+header.results #results-bottom li.videos {
+  background: url("../../img/results-nav-video.png") no-repeat 2px 3px;
+  background-size: 13px;
+}
+header.results #results-bottom li.shopping {
+  background: url("../../img/results-nav-shop.png") no-repeat 2px 4px;
+  background-size: 13px;
+}
+header.results #results-bottom li.more {
+  background: url("../../img/results-nav-more.png") no-repeat 13px 5px;
+  background-size: 3px;
+}
+header.results #results-bottom li.settings {
+  padding-left: 4em;
 }
 
 #results-body {
@@ -276,6 +306,11 @@ header.results #results-bottom li.all {
 
   #search {
     width: 70%;
+  }
+}
+@media (max-width: 1200px) {
+  .apps-user {
+    display: none;
   }
 }
 

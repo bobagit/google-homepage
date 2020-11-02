@@ -112,6 +112,7 @@ section
     height: 2rem
     margin: 0 1em
     border: none
+    font-size: 120%
   .mic
     img
       height: 20px
@@ -141,14 +142,12 @@ button
 input:focus, select:focus, textarea:focus, button:focus
   outline: none
 
-
 header
   &.results
     display: flex
     flex-direction: column
     justify-content: flex-start
     border-bottom: 1px solid $border-color
-    
     #results-top
       display: flex
       flex-direction: row
@@ -188,29 +187,48 @@ header
           font-size: 120%
         .mic
           img
-            height: 18px
-            
-        ul
-          .apps-user
-            justify-content: flex-end
+            height: 18px  
+      .apps-user
+        justify-content: flex-end
+        margin-left: auto
+        padding: 0
   
     #results-bottom
       flex-direction: row
       margin-left: 10rem
+      width: 55rem
       li
+        margin: 0 0 0 1rem
+        padding: .2rem 0 0 0
         height: 24px
         a
-          padding: 0.4rem .7rem 0.4rem 1.2rem
+          padding: 0.4rem .9rem 0.4rem 1.4rem
+          text-decoration: none
         &.active
           color: $active-text !important
           border-bottom: 3px solid $active-text
           
    
         &.all
-          background: url("../../img/results-nav-all-active.png") no-repeat 0 0
+          background: url("../../img/results-nav-all-active.png") no-repeat 0 1px
           background-size: 14px
-
-
+        &.news
+          background: url("../../img/results-nav-news.png") no-repeat 0 3px
+          background-size: 14px
+        &.maps
+          background: url("../../img/results-nav-map.png") no-repeat 5px 1px
+          background-size: 11px
+        &.videos
+          background: url("../../img/results-nav-video.png") no-repeat 2px 3px
+          background-size: 13px
+        &.shopping
+          background: url("../../img/results-nav-shop.png") no-repeat 2px 4px
+          background-size: 13px
+        &.more
+          background: url("../../img/results-nav-more.png") no-repeat 13px 5px
+          background-size: 3px
+        &.settings
+          padding-left: 4em
 
 #results-body
   display: flex
@@ -238,8 +256,6 @@ header
       &:hover
         text-decoration: underline      
 
-
-
 @media (max-width:800px)
   footer
     display: flex
@@ -252,3 +268,8 @@ header
         justify-content: center
   #search
     width: 70%
+
+@media (max-width:1200px)
+  .apps-user
+    display: none
+  
